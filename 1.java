@@ -1,4 +1,3 @@
-package IO流3;
 /**
  * Created by jinxiaobo on 17/1/23.
  * 编程题：
