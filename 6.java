@@ -1,24 +1,23 @@
 /**
  * Created by jinxiaobo on 17/1/23.
  * 编程题：
- 使用冒泡排序法对数组进行排序
+ 对数组中的元素进行反转
  */
 public class Demo {
     public static void main(String[] args)
     {
-        int arr[]={11,22,33,23,54,34};
-        BubbleSort(arr);
+        int arr[]={11,22,33,55,23,54,34};
+        SwapArr(arr);
         print(arr);
     }
-    public static void BubbleSort(int arr[])
-    {
-        for(int i=0;i<arr.length-1;i++)
-            for(int j=0;j<arr.length-1-i;j++)
-            {
-                if(arr[j]>arr[j+1])
-                    swap(arr,j,j+1);
-            }
+
+    private static void SwapArr(int[] arr) {
+        for(int i=0,j=arr.length-1;j>=i;i++,j--)
+        {
+            swap(arr,i,j);
+        }
     }
+
     public static void swap(int arr[],int a,int b)
     {
         int temp=arr[a];
