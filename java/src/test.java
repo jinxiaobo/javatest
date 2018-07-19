@@ -1,5 +1,5 @@
 /**
- * @author jixniaobo@jd.com
+ * @author jixniaobo
  * @date 2018/7/19
  */
 public class test {
